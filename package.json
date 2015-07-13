@@ -1,5 +1,5 @@
 {
-  "name": "sails-policy-sql-criteria",
+  "name": "sails-sql-criteria",
   "version": "0.0.0",
   "description": "Support using a SQL WHERE clause to filter results",
   "main": "dist/api/hooks/sql-criteria-policy.js",

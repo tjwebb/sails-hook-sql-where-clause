@@ -5,7 +5,7 @@ const SqlCriteriaPolicy = {
 
   main (req, res, next) {
     if (_.isString(req.query.sql)) {
-      req.query.sql = this.buildWaterlineCriteria(req.query.sql)
+      req.query = this.buildWaterlineCriteria(req.query.sql)
     }
 
     next()

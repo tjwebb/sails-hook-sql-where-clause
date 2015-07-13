@@ -2,9 +2,9 @@
   "name": "sails-hook-sql-where-clause",
   "version": "0.0.0",
   "description": "Support using a SQL WHERE clause to filter results",
-  "main": "index.js",
+  "main": "dist/api/hooks/sql-criteria-policy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive --reporter spec --compilers js:babel/register --timeout 500"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/tjwebb/sails-hook-sql-where-clause/issues"
   },
-  "homepage": "https://github.com/tjwebb/sails-hook-sql-where-clause"
+  "homepage": "https://github.com/tjwebb/sails-hook-sql-where-clause",
+  "dependencies": {
+    "sql-parser": "^0.5.0",
+    "babel": "^5.6",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0"
+  },
+  "sails": {
+    "isHook": true
+  }
 }
